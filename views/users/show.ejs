@@ -1,0 +1,38 @@
+<h1>User Data for <%= user.fullname%></h1>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <td><%= user.fullname %></td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td><%= user.email %></td>
+  </tr>
+  <tr>
+    <th>Password</th>
+    <td class="hidden-text"><%= user.password %></td>
+  </tr>
+  <tr>
+    <th>Zip Code</th>
+    <td><%= user.zipCode %></td>
+  </tr>
+</table>
+
+<% if(user.subscribedAccount) {%>
+    <h4 class="center">This user has a
+      <a href="<%= `/susbscriber/${user.subscribedAccount}` %>">subscribed account</a>
+    </h4>
+<% } %>
+
+<div class="center">
+  <a href="/users" class="button">View all Users</a>
+</div>
+<div class="center">
+  <a href="<%= `/users/${user._id}/edit` %>" class="button">Edit user details</a>
+</div>
+<div class="center">
+  <a href="<%= `/users/${user._id}/delete?_method=DELETE` %>"
+     class="button" onclick="return confirm('Ho fafana marina ve?')">
+     Delete
+  </a>
+</div>

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina");
+
+body {
+  margin: 0;
+  padding-top: 120px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #625a56;
+}
+
+#nav {
+  width: 100%;
+  height: 110px;
+  padding: 20px 0 5px 0;
+  border-bottom: solid 8px #697acb;
+  box-shadow: 10px 10px 10px #ccc;
+  position: absolute;
+  top: 0;
+}
+
+#title {
+  color: #625a56;
+  margin: 0;
+  font-family: "Baloo Bhaina";
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+.nav-align {
+  text-align: center;
+  padding: 3px 0;
+}
+
+.container {
+  padding: 0% 10%;
+}
+
+.button {
+  background-color: #3d41b4;
+  padding: 0.3vw 3vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #697acb;
+}
+
+.subscriber {
+  padding: 10px 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+.subscriber p {
+  margin: 0;
+}
+
+.list-container {
+  padding: 0 20px;
+  border: 3px solid #697acb;
+  border-radius: 1px;
+}
+
+.item-label {
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.subscription-form input {
+  display: block;
+  margin: 5px;
+}
+
+.title-user {
+  margin-bottom: 25px;
+}
+
+.user-table {
+  width: 100%;
+}
+
+.user-table thead {
+  height: 4rem;
+  border-bottom: 2px solid #3a4da5;
+}
+
+.user-table thead th, td {
+  text-align: center;
+}
+
+.user-table tr {
+  height: 4rem;
+  border-bottom: 1px solid rgba(96, 125, 139, 0.25);
+}
+
+.flashes .success {
+	background: #4fae42;
+	line-height: 3rem;
+	text-align: center;
+	color: #000000bf;
+  margin-bottom: 15px;
+}
+
+.flashes .error {
+	background: rgb(212, 34, 34);
+	line-height: 3rem;
+	text-align: center;
+	color: #000000bf;
+  margin-bottom: 15px;
+}
+
+.data-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.data-form label {
+  margin: 5px 0 0 0;
+}
+
+.hidden-text {
+  -webkit-text-security: disc;
+}
+
+.login-status {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  height: max-content;
+}
+
+.login-status .btn-login {
+  border-radius: 5px;
+  background-color: rgb(22, 169, 232);
+  color: white;
+  padding: 10px;
+}
+
+.login-status .logged-in {
+  margin-bottom: 25px;
+}
+
+.login-status .logged-in a {
+  color: rgb(46, 152, 69);
+}
+
+.login-status .log-out {
+  text-align: end;
+}
+
+.login-status .btn-logout {
+  background: rgb(163, 35, 20);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}

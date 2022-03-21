@@ -1,0 +1,34 @@
+<h2 class="title-user">Users Table</h2>
+<table class="user-table">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Zip Code</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </thead>
+
+  <tbody>
+    <% users.forEach((user) => { %>
+      <tr>
+        <td>
+          <a href="<%=`/users/${user._id}`%>">
+            <%= user.fullname %>
+          </a>
+        </td>
+        <td><%= user.email %></td>
+        <td><%= user.zipCode %></td>
+        <td>
+          <a href="<%=`/users/${user._id}/edit`%>">Edit</a>
+        </td>
+        <td>
+          <a href="<%=`/users/${user._id}/delete?_method=DELETE`%>"
+            onclick="return confirm('Fafana tokoa ve?')">
+            Delete
+          </a>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+
+</table>
